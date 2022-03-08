@@ -3,10 +3,8 @@ class Yatzy
     @dice = [d1, d2, d3, d4, d5]
   end
 
-  def chance(d1, d2, d3, d4, d5)
-    
+  def chance
     @dice.sum
-
   end
 
   def yatzy()
