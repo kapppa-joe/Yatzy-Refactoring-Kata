@@ -17,10 +17,10 @@ class YatzyTest < Test::Unit::TestCase
   end
 
   def test_ones
-    assert 1 == Yatzy.new(1,2,3,4,5).ones(1,2,3,4,5)
-    assert 2 == Yatzy.new(1,2,1,4,5).ones(1,2,1,4,5)
-    assert 0 == Yatzy.new(6,2,2,4,5).ones(6,2,2,4,5)
-    assert 4 == Yatzy.new(1,2,1,1,1).ones(1,2,1,1,1)
+    assert 1 == Yatzy.new(1,2,3,4,5).ones
+    assert 2 == Yatzy.new(1,2,1,4,5).ones
+    assert 0 == Yatzy.new(6,2,2,4,5).ones
+    assert 4 == Yatzy.new(1,2,1,1,1).ones
   end
 
   def test_twos

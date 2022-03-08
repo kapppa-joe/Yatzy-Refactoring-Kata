@@ -19,7 +19,7 @@ class Yatzy
     @dice.count(die_value)
   end
 
-  def ones( d1,  d2,  d3,  d4,  d5)
+  def ones
     count_number_of(1)
   end
 
