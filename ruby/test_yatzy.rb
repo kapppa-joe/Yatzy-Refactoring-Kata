@@ -3,8 +3,11 @@ require 'test/unit'
 
 class YatzyTest < Test::Unit::TestCase
   def test_chance_scores_sum_of_all_dice
-    assert 15 == Yatzy.chance(2,3,4,5,1)
-    assert 16 == Yatzy.chance(3,3,4,5,1)
+    assert 15 == Yatzy.new(2,3,4,5,1).chance(2,3,4,5,1)
+    assert 16 == Yatzy.new(3,3,4,5,1).chance(3,3,4,5,1)
+
+    # assert 15 == Yatzy.chance(2,3,4,5,1)
+    # assert 16 == Yatzy.chance(3,3,4,5,1)
   end
 
   def test_yatzy_scores_50_when_all_dice_are_the_same

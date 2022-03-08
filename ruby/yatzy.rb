@@ -3,9 +3,9 @@ class Yatzy
     @dice = [d1, d2, d3, d4, d5]
   end
 
-  def self.chance(d1, d2, d3, d4, d5)
+  def chance(d1, d2, d3, d4, d5)
     
-    [d1, d2, d3, d4, d5].sum
+    @dice.sum
 
   end
 
