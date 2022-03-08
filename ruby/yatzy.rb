@@ -15,18 +15,16 @@ class Yatzy
     @dice.uniq.length == 1
   end
 
-  def count_number_of(die_value)
+  def sum_dice_of_value(die_value)
     @dice.count(die_value) * die_value
   end
 
   def ones
-    count_number_of(1)
+    sum_dice_of_value(1)
   end
 
   def twos
-
-    count_number_of(2)
-
+    sum_dice_of_value(2)
   end
 
   def self.threes( d1,  d2,  d3,  d4,  d5)
