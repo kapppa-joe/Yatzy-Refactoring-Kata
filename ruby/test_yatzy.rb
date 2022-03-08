@@ -24,8 +24,8 @@ class YatzyTest < Test::Unit::TestCase
   end
 
   def test_twos
-    assert Yatzy.twos(1,2,3,2,6) == 4
-    assert Yatzy.twos(2,2,2,2,2) == 10
+    assert Yatzy.new(1,2,3,2,6).twos(1,2,3,2,6) == 4
+    assert Yatzy.new(2,2,2,2,2).twos(2,2,2,2,2) == 10
   end
 
   def test_threes
