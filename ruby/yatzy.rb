@@ -11,7 +11,7 @@ class Yatzy
     @dice.uniq.length == 1 ? 50 : 0
   end
 
-  def self.ones( d1,  d2,  d3,  d4,  d5)
+  def ones( d1,  d2,  d3,  d4,  d5)
     sum = 0
     if (d1 == 1)
       sum += 1
