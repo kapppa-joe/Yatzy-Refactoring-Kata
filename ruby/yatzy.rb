@@ -27,23 +27,6 @@ class Yatzy
 
     count_number_of(2) * 2
 
-    # sum = 0
-    # if (@dice[0] == 2)
-    #   sum += 2
-    # end
-    # if (@dice[1] == 2)
-    #   sum += 2
-    # end
-    # if (@dice[2] == 2)
-    #   sum += 2
-    # end
-    # if (@dice[3] == 2)
-    #   sum += 2
-    # end
-    # if (@dice[4] == 2)
-    #   sum += 2
-    # end
-    # return sum
   end
 
   def self.threes( d1,  d2,  d3,  d4,  d5)
