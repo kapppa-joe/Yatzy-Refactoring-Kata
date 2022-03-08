@@ -1,4 +1,13 @@
 class Yatzy
+  def initialize(d1, d2, d3, d4, _5)
+    @dice = [0]*5
+    @dice[0] = d1
+    @dice[1] = d2
+    @dice[2] = d3
+    @dice[3] = d4
+    @dice[4] = _5
+  end
+
   def self.chance(d1, d2, d3, d4, d5)
     total = 0
     total += d1
@@ -81,15 +90,6 @@ class Yatzy
       s += 3
     end
     return s
-  end
-
-  def initialize(d1, d2, d3, d4, _5)
-    @dice = [0]*5
-    @dice[0] = d1
-    @dice[1] = d2
-    @dice[2] = d3
-    @dice[3] = d4
-    @dice[4] = _5
   end
 
   def fours
