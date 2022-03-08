@@ -9,7 +9,7 @@ class Yatzy
 
   end
 
-  def self.yatzy(dice)
+  def yatzy(dice)
     counts = [0]*(dice.length+1)
     for die in dice do
       counts[die-1] += 1

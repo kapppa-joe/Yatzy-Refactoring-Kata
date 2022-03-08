@@ -8,12 +8,12 @@ class YatzyTest < Test::Unit::TestCase
   end
 
   def test_yatzy_scores_50_when_all_dice_are_the_same
-    assert 50 == Yatzy.yatzy([4,4,4,4,4])
-    assert 50 == Yatzy.yatzy([6,6,6,6,6])
+    assert 50 == Yatzy.new(4,4,4,4,4).yatzy([4,4,4,4,4])
+    assert 50 == Yatzy.new(6,6,6,6,6).yatzy([6,6,6,6,6])
   end
 
   def test_yatzy_scores_zero_when_not_all_dice_are_the_same
-    assert 0 == Yatzy.yatzy([6,6,6,6,3])
+    assert 0 == Yatzy.new(6,6,6,6,3).yatzy([6,6,6,6,3])
   end
 
   def test_1s
