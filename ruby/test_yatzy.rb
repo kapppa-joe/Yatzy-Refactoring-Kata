@@ -7,9 +7,12 @@ class YatzyTest < Test::Unit::TestCase
     assert 16 == Yatzy.chance(3,3,4,5,1)
   end
 
-  def test_yatzy_scores_50
+  def test_yatzy_scores_50_when_all_dice_are_the_same
     assert 50 == Yatzy.yatzy([4,4,4,4,4])
     assert 50 == Yatzy.yatzy([6,6,6,6,6])
+  end
+
+  def test_yatzy_scores_zero_when_not_all_dice_are_the_same
     assert 0 == Yatzy.yatzy([6,6,6,6,3])
   end
 
