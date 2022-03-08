@@ -12,24 +12,7 @@ class Yatzy
   end
 
   def ones( d1,  d2,  d3,  d4,  d5)
-    sum = 0
-    if (d1 == 1)
-      sum += 1
-    end
-    if (d2 == 1)
-      sum += 1
-    end
-    if (d3 == 1)
-      sum += 1
-    end
-    if (d4 == 1)
-      sum += 1
-    end
-    if (d5 == 1)
-      sum += 1
-    end
-
-    sum
+    @dice.count(1)
   end
 
   def self.twos( d1,  d2,  d3,  d4,  d5)
