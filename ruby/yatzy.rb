@@ -25,19 +25,19 @@ class Yatzy
 
   def twos( d1,  d2,  d3,  d4,  d5)
     sum = 0
-    if (d1 == 2)
+    if (@dice[0] == 2)
       sum += 2
     end
-    if (d2 == 2)
+    if (@dice[1] == 2)
       sum += 2
     end
-    if (d3 == 2)
+    if (@dice[2] == 2)
       sum += 2
     end
-    if (d4 == 2)
+    if (@dice[3] == 2)
       sum += 2
     end
-    if (d5 == 2)
+    if (@dice[4] == 2)
       sum += 2
     end
     return sum
