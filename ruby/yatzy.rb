@@ -8,7 +8,15 @@ class Yatzy
   end
 
   def yatzy
-    @dice.uniq.length == 1 ? 50 : 0
+    all_dice_are_the_same?() ? 50 : 0
+  end
+
+  def all_dice_are_the_same?
+    @dice.uniq.length == 1
+  end
+
+  def count_number_of(die_value)
+    # something
   end
 
   def ones( d1,  d2,  d3,  d4,  d5)
