@@ -16,7 +16,7 @@ class Yatzy
   end
 
   def count_number_of(die_value)
-    @dice.count(die_value)
+    @dice.count(die_value) * die_value
   end
 
   def ones
@@ -25,7 +25,7 @@ class Yatzy
 
   def twos
 
-    count_number_of(2) * 2
+    count_number_of(2)
 
   end
 
